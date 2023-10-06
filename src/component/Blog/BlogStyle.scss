@@ -1,0 +1,227 @@
+.blog {
+    .breadcrumb-text{
+        a{
+            color: #fff;
+        }
+    }
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: 40%;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('./imgFlooring/pageheader-wood3.jpg');
+                height             : 60vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
+
+                        .text {
+                            overflow   : hidden;
+                            width      : 100%;
+                            margin-left: 35px;
+                            margin-top : 200px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 45px;
+                                font-weight: 700;
+                                text-align : center;
+                            }
+
+                            .breadcrumb-text {
+                                text-align : center;
+                                color      : #fff;
+                                font-size  : 20px;
+                                margin-top : 25px;
+                                font-weight: 700;
+
+                                svg {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .news {
+        // padding-top   : 100px;   
+        padding-bottom: 150px;
+
+        .row {
+            flex-wrap      : wrap;
+            margin-top     : 100px;
+            justify-content: space-around;
+
+            .col-3 {
+                flex     : 0 0 30%;
+                max-width: 30% !important;
+            }
+
+            .img-news {
+                img {
+                    width    : 100%;
+                    transform: skewY(-8deg);
+                }
+            }
+
+            .content-new {
+                margin-top: 25px;
+                text-align: center;
+
+                .time-new {
+                    color      : #000;
+                    font-weight: 600;
+                    text-align : center;
+                }
+
+                .title-new {
+                    color        : #92602d;
+                    font-weight  : 700;
+                    font-size    : 22px;
+                    margin-bottom: 0px;
+                    text-align   : center;
+                }
+
+                .sub-new {
+                    font-size    : 17px;
+                    float        : left;
+                    margin-bottom: 50px;
+                    text-align   : left !important;
+                }
+
+                a {
+
+                    &:hover {
+                        text-decoration : none;
+                        background-color: #6c4723;
+                    }
+                }
+
+                .more {
+                    background-color: #92602d;
+                    color           : #fff;
+                    font-size       : 16px;
+                    padding         : 20px 40px;
+                    font-weight     : 600;
+                    text-align      : center;
+                    margin-top      : 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 820px){
+    .blog .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
+    .blog .news .row{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        margin-right: 0px;
+        
+     .img-news img{
+        width: 200%;
+        margin-left: 180px;
+        margin-top: 30px;
+     }
+    }
+    .blog .news .row .content-new{
+        margin-top: 70px;
+        white-space: nowrap;
+    }
+    .blog .news .row .content-new{
+        margin-left: 300px;
+        font-size: 20px;
+    }
+    .blog .news .row .content-new .more{
+     display: flow-root;
+     font-size: 20px;
+     margin-right: -195px;
+    margin-left: 55px;
+    padding: 25px 40px;
+
+    }
+    .blog .news .row .content-new .time-new{
+        margin-top: -40px;
+    font-size: 25px;
+    }
+    .blog .news .row .content-new .title-new{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .blog .news .row .content-new .sub-new{
+        margin-bottom: 30px;
+        margin-left: -125px;
+    }
+    
+}
+@media  (max-width: 740px){
+    .blog .news .row .content-new .title-new{
+        margin-left: 20px;
+        
+    }
+
+    .blog .news .row .content-new{
+        margin-left: 50px;
+    }
+    .blog .news .row .img-news img{
+        margin-left: 85px;
+        width: 260%;
+    }
+    .blog .news .row{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .blog .news .row .content-new .time-new{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .blog .news{
+        padding-bottom: 45px;
+    }
+    .blog .news .row .content-new .sub-new{
+        white-space: pre-line;
+        margin-left: 0px;
+        margin-right: -300px;
+    }
+    .blog .news .row .content-new .more{
+        font-size: 16px;
+        margin-right: -170px;
+        margin-left: 80px;
+        padding: 16px 30px;
+       
+    }
+    
+}
